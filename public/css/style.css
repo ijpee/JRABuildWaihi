@@ -1,0 +1,569 @@
+/********** Template CSS **********/
+
+/*** JRA BUILD Color Variables ***/
+:root {
+    --bs-primary: #FDB515 !important;
+    --bs-primary-rgb: 253, 181, 21 !important;
+    --bs-secondary: #115E67 !important;
+    --bs-secondary-rgb: 17, 94, 103 !important;
+    --bs-dark: #1A1A1A !important;
+    --bs-dark-rgb: 26, 26, 26 !important;
+    --bs-light: #F7F4EE !important;
+    --bs-white: #FFFFFF !important;
+    --bs-black: #000000 !important;
+}
+
+/* Override Bootstrap primary color classes */
+.bg-primary {
+    background-color: #FDB515 !important;
+}
+
+.text-primary {
+    color: #FDB515 !important;
+}
+
+.btn-primary {
+    background-color: #FDB515 !important;
+    border-color: #FDB515 !important;
+    color: #1A1A1A !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #E5A313 !important;
+    border-color: #E5A313 !important;
+    color: #1A1A1A !important;
+}
+
+.btn-outline-primary {
+    color: #FDB515 !important;
+    border-color: #FDB515 !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+    background-color: #FDB515 !important;
+    border-color: #FDB515 !important;
+    color: #1A1A1A !important;
+}
+
+.bg-secondary {
+    background-color: #115E67 !important;
+}
+
+.text-secondary {
+    color: #115E67 !important;
+}
+
+.bg-light {
+    background-color: #F7F4EE !important;
+}
+
+.bg-dark {
+    background-color: #1A1A1A !important;
+}
+
+.border-primary {
+    border-color: #FDB515 !important;
+}
+
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+/*** Button ***/
+.btn {
+    transition: .5s;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+
+/*** Navbar ***/
+.sticky-top {
+    top: -150px;
+    transition: .5s;
+}
+
+.navbar {
+    padding: 15px 0;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.navbar .navbar-nav .nav-link {
+    margin-left: 30px;
+    padding: 0;
+    outline: none;
+    color: var(--bs-dark);
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--bs-primary)
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover,
+.navbar .dropdown-menu .dropdown-item.active {
+    color: var(--bs-white);
+    background: var(--bs-primary);
+}
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav .nav-link  {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}
+
+
+/*** Hero Header ***/
+.hero-header {
+    margin-top: -100px;
+    padding-top: 150px;
+    background: #F7F4EE;
+    background-size: cover;
+}
+
+.hero-header .breadcrumb-item+.breadcrumb-item::before {
+    color: var(--light);
+}
+
+.header-carousel {
+    position: relative;
+    padding: 45px 90px 45px 0;
+}
+
+.header-carousel::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: calc(50% + 45px);
+    height: 100%;
+    background: var(--bs-primary);
+    z-index: -1;
+}
+
+.header-carousel .owl-dots {
+    position: absolute;
+    top: 50%;
+    right: 38px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 5px 0;
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--bs-white);
+    transition: .5s;
+}
+
+.header-carousel .owl-dot.active {
+    height: 30px;
+    background: var(--bs-white);
+}
+
+
+/*** About ***/
+.about-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-img::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(../img/bg-about-img.png) top left no-repeat;
+    background-size: contain;
+}
+
+
+/*** Project ***/
+.project-item img {
+    transition: .5s;
+}
+  
+.project-item:hover img {
+    transform: scale(1.2);
+}
+  
+.project-overlay {
+    position: absolute;
+    padding: 25px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.55) 100%);
+    z-index: 1;
+    transition: background .22s ease;
+}
+
+/* Local tweaks for projects grid: consistent thumbnails, subtler overlay and location text */
+/* Ensure thumbnails are cropped consistently */
+.project-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Subtle dark gradient overlay so images remain visible - now handled in style.css */
+.project-item .project-overlay {
+    padding: 1rem;
+}
+
+.project-item .project-overlay h4 {
+    margin: 0 0 .25rem 0;
+    font-weight: 700;
+    color: #fff;
+}
+.project-item .project-overlay .project-location {
+    opacity: 0.95;
+    color: rgba(255,255,255,0.92);
+    font-size: .9rem;
+}
+
+/* Hover affordance - subtle brightness and border */
+.project-item {
+    transition: transform .2s ease;
+}
+.project-item:hover {
+    transform: scale(1.02);
+}
+.project-item:hover .project-overlay {
+    background: linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(0,0,0,0.7) 100%);
+}
+.project-item:hover img {
+    filter: brightness(1.1);
+    transition: filter .2s ease;
+}
+
+/* Make left info panel use a brighter background and dark text for contrast */
+.col-lg-5 .d-flex.bg-primary {
+    background: linear-gradient(90deg,#f6b21a,#f3a800);
+    color: #111;
+}
+.col-lg-5 .d-flex.bg-primary .text-white { color: #111 !important; }
+.col-lg-5 .d-flex.bg-primary .text-primary.bg-light { background:#fff; color:#111; }
+
+@media (max-width: 576px) {
+    .project-item img { height: 160px; }
+}
+
+/*** Service ***/
+.service-item {
+    position: relative;
+    padding: 30px 25px;
+    transition: .5s;
+}
+
+.service-item.bg-primary:hover {
+    background: var(--bs-light) !important;
+}
+
+.service-item.bg-primary p {
+    color: var(--bs-light);
+    transition: .5s;
+}
+
+.service-item.bg-primary:hover p {
+    color: var(--bs-secondary);
+}
+
+.service-item.bg-light:hover {
+    background: var(--bs-primary) !important;
+}
+
+.service-item.bg-light p {
+    color: var(--bs-secondary);
+    transition: .5s;
+}
+
+.service-item.bg-light:hover p {
+    color: var(--bs-light);
+}
+
+
+.service-item .service-img h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 12px 7px 0;
+}
+
+.service-item.bg-primary .service-img h3 {
+    background: var(--bs-primary);
+    color: var(--bs-white);
+    transition: .5s;
+}
+
+.service-item.bg-primary:hover .service-img h3 {
+    background: var(--bs-light);
+    color: var(--bs-dark);
+}
+
+.service-item.bg-light .service-img h3 {
+    background: var(--bs-light);
+    color: var(--bs-dark);
+    transition: .5s;
+}
+
+.service-item.bg-light:hover .service-img h3 {
+    background: var(--bs-primary);
+    color: var(--bs-white);
+}
+
+
+/* Our Team and Testimonial styles removed - these components are no longer used */
+
+
+/* Newsletter styles removed */
+
+
+/*** Footer ***/
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 10px;
+    padding: 0;
+    text-align: left;
+    color: rgba(255,255,255,.5);
+    font-weight: normal;
+    transition: .3s;
+}
+
+.footer .btn.btn-link:hover {
+    color: var(--bs-white);
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .copyright {
+    padding: 25px 0;
+    font-size: 14px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+    color: rgba(255,255,255,.5);
+}
+
+.footer .copyright a:hover {
+    color: var(--bs-white);
+}
+
+.footer .footer-menu a {
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+.footer .footer-menu a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
+
+
+/*** JRA BUILD Additional Styling ***/
+/* Ensure good contrast with yellow primary color */
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary h4,
+.bg-primary h5,
+.bg-primary h6,
+.bg-primary p,
+.bg-primary span,
+.bg-primary .text-white {
+    color: #1A1A1A !important;
+}
+
+/* Keep icons dark on yellow background */
+.bg-primary i {
+    color: #1A1A1A !important;
+}
+
+/* White text on dark/secondary backgrounds */
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark h4,
+.bg-dark h5,
+.bg-dark h6,
+.bg-dark p,
+.bg-secondary h1,
+.bg-secondary h2,
+.bg-secondary h3,
+.bg-secondary h4,
+.bg-secondary h5,
+.bg-secondary h6,
+.bg-secondary p {
+    color: #FFFFFF !important;
+}
+
+/* Project overlay with primary color - REMOVED: now using dark gradient defined earlier */
+
+/* Service items with better contrast */
+.service-item.bg-primary {
+    background-color: #FDB515 !important;
+}
+
+.service-item.bg-primary h3,
+.service-item.bg-primary p {
+    color: #1A1A1A !important;
+}
+
+/* Navbar hover state */
+.navbar .navbar-nav .nav-link:hover {
+    color: #FDB515 !important;
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: #FDB515 !important;
+}
+
+/* Border colors for primary */
+.border-2.border-white {
+    border-width: 2px !important;
+}
+
+/* Link colors */
+a.text-primary:hover {
+    color: #E5A313 !important;
+}
+
+/* Form inputs focus state */
+.form-control:focus {
+    border-color: #FDB515 !important;
+    box-shadow: 0 0 0 0.25rem rgba(253, 181, 21, 0.25) !important;
+}
+
+/* Spinner color */
+.spinner-grow.text-primary {
+    color: #FDB515 !important;
+}
+
+/* Button focus states */
+.btn-primary:focus,
+.btn-outline-primary:focus {
+    box-shadow: 0 0 0 0.25rem rgba(253, 181, 21, 0.5) !important;
+}
+
+/* Hero header adjustments */
+.hero-header .border-white {
+    border-color: #FDB515 !important;
+    background-color: transparent !important;
+}
+
+/* Breadcrumb styling */
+.breadcrumb-item.active {
+    color: #115E67 !important;
+}
+
+.breadcrumb-item a {
+    color: #FDB515 !important;
+}
+
+/* Feature icons */
+.text-primary.fa-5x,
+.text-primary.fa-3x,
+.text-primary.fa-2x {
+    color: #FDB515 !important;
+}

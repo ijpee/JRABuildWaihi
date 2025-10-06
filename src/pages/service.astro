@@ -1,0 +1,98 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout 
+    title="Our Services - JRA BUILD | Building Services in Waihi Beach"
+    description="JRA BUILD offers comprehensive construction services including new home builds, renovations, and extensions in Waihi Beach."
+    keywords="JRA BUILD, services, construction, building, renovations, Waihi Beach"
+>
+    <Navbar />
+
+    <!-- Hero Start -->
+    <div class="container-fluid pb-5 bg-light hero-header">
+        <div class="container py-5">
+            <div class="row g-3 align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="display-1 mb-0 animated slideInLeft">Services</h1>
+                </div>
+                <div class="col-lg-6 animated slideInRight">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center justify-content-lg-end mb-0">
+                            <li class="breadcrumb-item"><a class="text-primary" href="/">Home</a></li>
+                            <li class="breadcrumb-item text-secondary active" aria-current="page">Services</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Service Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <h1 class="mb-5">Our Building <span
+                            class="text-uppercase text-primary bg-light px-2">Services</span></h1>
+                    <p>JRA BUILD offers a comprehensive range of construction services for residential and commercial clients in Waihi Beach and surrounding areas.</p>
+                    <p class="mb-5">From new home construction to renovations, extensions, and project management, we deliver quality results with attention to detail and excellent customer service throughout the build process.</p>
+                    <div class="d-flex align-items-center bg-light">
+                        <div class="btn-square flex-shrink-0 bg-primary" style="width: 100px; height: 100px;">
+                            <i class="fa fa-phone fa-2x text-white"></i>
+                        </div>
+                        <div class="px-3">
+                            <h3>021 578 007</h3>
+                            <span>Call us for a free quote and consultation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-0">
+                        <div class="col-md-6 wow fadeIn" data-wow-delay="0.2s">
+                            <div class="service-item h-100 d-flex flex-column justify-content-center bg-primary">
+                                <a href="#!" class="service-img position-relative mb-4">
+                                    <img class="img-fluid w-100" src="/img/service-1.jpg" alt="New home construction framing" loading="lazy" width="800" height="600">
+                                    <h3>New Home Construction</h3>
+                                </a>
+                                <p class="mb-0">Building your dream home from the ground up with quality craftsmanship and attention to detail. Complete project management from design to completion.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 wow fadeIn" data-wow-delay="0.4s">
+                            <div class="service-item h-100 d-flex flex-column justify-content-center bg-light">
+                                <a href="#!" class="service-img position-relative mb-4">
+                                    <img class="img-fluid w-100" src="/img/service-2.jpg" alt="Home renovation interior" loading="lazy" width="800" height="600">
+                                    <h3>Renovations</h3>
+                                </a>
+                                <p class="mb-0">Transform your existing home with professional renovation services tailored to your needs. Kitchen, bathroom, and full home makeovers.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 wow fadeIn" data-wow-delay="0.6s">
+                            <div class="service-item h-100 d-flex flex-column justify-content-center bg-light">
+                                <a href="#!" class="service-img position-relative mb-4">
+                                    <img class="img-fluid w-100" src="/img/service-3.jpg" alt="House extension foundation work" loading="lazy" width="800" height="600">
+                                    <h3>Extensions & Additions</h3>
+                                </a>
+                                <p class="mb-0">Expand your living space with expertly designed and constructed home extensions, second stories, and room additions.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 wow fadeIn" data-wow-delay="0.8s">
+                            <div class="service-item h-100 d-flex flex-column justify-content-center bg-primary">
+                                <a href="#!" class="service-img position-relative mb-4">
+                                    <img class="img-fluid w-100" src="/img/service-4.jpg" alt="Commercial fit-out project" loading="lazy" width="800" height="600">
+                                    <h3>Commercial Projects</h3>
+                                </a>
+                                <p class="mb-0">Professional construction services for commercial builds and fit-outs in the local area. Quality workmanship for your business.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+    <Footer />
+</BaseLayout>

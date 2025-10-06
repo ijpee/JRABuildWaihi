@@ -1,0 +1,212 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout 
+    title="Our Projects - JRA BUILD | Building Portfolio Waihi Beach"
+    description="View our completed building projects in Waihi Beach - new homes, renovations, and extensions by JRA BUILD."
+    keywords="JRA BUILD, projects, portfolio, construction, Waihi Beach"
+>
+    <Navbar />
+
+    <!-- Hero Start -->
+    <div class="container-fluid pb-5 bg-light hero-header">
+        <div class="container py-5">
+            <div class="row g-3 align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="display-1 mb-0 animated slideInLeft">Projects</h1>
+                </div>
+                <div class="col-lg-6 animated slideInRight">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center justify-content-lg-end mb-0">
+                            <li class="breadcrumb-item"><a class="text-primary" href="/">Home</a></li>
+                            <li class="breadcrumb-item text-secondary active" aria-current="page">Projects</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Project Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row g-0">
+                <div class="col-12">
+                    <div class="row g-0">
+                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.2s">
+                            <div class="project-item position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="/img/project-1.jpg" alt="Modern kitchen renovation" loading="lazy" width="800" height="600">
+                                <a class="project-overlay text-decoration-none" href="#project-1">
+                                    <h4 class="text-white">Kitchen</h4>
+                                    <small class="project-location">Waihi Beach</small>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="project-item position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="/img/project-2.jpg" alt="Contemporary bathroom fit-out" loading="lazy" width="800" height="600">
+                                <a class="project-overlay text-decoration-none" href="#project-2">
+                                    <h4 class="text-white">Bathroom</h4>
+                                    <small class="project-location">Waihi Beach</small>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.4s">
+                            <div class="project-item position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="/img/project-3.jpg" alt="Bedroom with custom wardrobes" loading="lazy" width="800" height="600">
+                                <a class="project-overlay text-decoration-none" href="#project-3">
+                                    <h4 class="text-white">Bedroom</h4>
+                                    <small class="project-location">Waihi Beach</small>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="project-item position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="/img/project-4.jpg" alt="Open-plan living room area" loading="lazy" width="800" height="600">
+                                <a class="project-overlay text-decoration-none" href="#project-4">
+                                    <h4 class="text-white">Living Room</h4>
+                                    <small class="project-location">Waihi Beach</small>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.6s">
+                            <div class="project-item position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="/img/project-5.jpg" alt="Bespoke custom furniture" loading="lazy" width="800" height="600">
+                                <a class="project-overlay text-decoration-none" href="#project-5">
+                                    <h4 class="text-white">Furniture</h4>
+                                    <small class="project-location">Waihi Beach</small>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.7s">
+                            <div class="project-item position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="/img/project-6.jpg" alt="Full home renovation project" loading="lazy" width="800" height="600">
+                                <a class="project-overlay text-decoration-none" href="#project-6">
+                                    <h4 class="text-white">Renovation</h4>
+                                    <small class="project-location">Waihi Beach</small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project End -->
+
+    <!-- Project Details Start -->
+    <div class="container py-5" id="projects-details">
+        <div class="row">
+            <section id="project-1" class="col-12 mb-5">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6">
+                        <h3>Kitchen</h3>
+                        <p>Overview: Completed kitchen remodel with bespoke cabinetry, stone benchtops and island. Scope: cabinetry, plumbing, tiling, electrical and finishes.</p>
+                        <p>Highlights: Custom island, soft-close joinery and LED task lighting.</p>
+                        <p><a class="btn btn-sm btn-outline-primary" href="/img/project-1.jpg" target="_blank">View full image</a>
+                        <a class="btn btn-sm btn-outline-secondary ms-2" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to top</a></p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/img/project-1.jpg" alt="Kitchen project detailed view" class="img-fluid rounded" loading="lazy" width="800" height="600">
+                    </div>
+                </div>
+            </section>
+
+            <section id="project-2" class="col-12 mb-5">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 order-md-2">
+                        <h3>Bathroom</h3>
+                        <p>Overview: Modern bathroom fit-out with wet-wall, walk-in shower and underfloor heating. Scope included waterproofing, joinery and tile work.</p>
+                        <p>Highlights: Frameless shower, recessed shelving and mood lighting.</p>
+                        <p><a class="btn btn-sm btn-outline-primary" href="/img/project-2.jpg" target="_blank">View full image</a>
+                        <a class="btn btn-sm btn-outline-secondary ms-2" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to top</a></p>
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <img src="/img/project-2.jpg" alt="Bathroom project detailed view" class="img-fluid rounded" loading="lazy" width="800" height="600">
+                    </div>
+                </div>
+            </section>
+
+            <section id="project-3" class="col-12 mb-5">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6">
+                        <h3>Bedroom</h3>
+                        <p>Overview: Bedroom renovation focused on built-in storage and improved natural light. Work included windows, joinery and painting.</p>
+                        <p>Highlights: Custom wardrobes and LED cove lighting.</p>
+                        <p><a class="btn btn-sm btn-outline-primary" href="/img/project-3.jpg" target="_blank">View full image</a>
+                        <a class="btn btn-sm btn-outline-secondary ms-2" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to top</a></p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/img/project-3.jpg" alt="Bedroom project detailed view" class="img-fluid rounded" loading="lazy" width="800" height="600">
+                    </div>
+                </div>
+            </section>
+
+            <section id="project-4" class="col-12 mb-5">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 order-md-2">
+                        <h3>Living Room</h3>
+                        <p>Overview: Open-plan living area with new joinery, flooring and improved flow to exterior spaces.</p>
+                        <p>Highlights: Feature timber detailing and large sliding doors.</p>
+                        <p><a class="btn btn-sm btn-outline-primary" href="/img/project-4.jpg" target="_blank">View full image</a>
+                        <a class="btn btn-sm btn-outline-secondary ms-2" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to top</a></p>
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <img src="/img/project-4.jpg" alt="Living Room project detailed view" class="img-fluid rounded" loading="lazy" width="800" height="600">
+                    </div>
+                </div>
+            </section>
+
+            <section id="project-5" class="col-12 mb-5">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6">
+                        <h3>Furniture</h3>
+                        <p>Overview: Bespoke furniture and built-ins designed and installed across multiple rooms.</p>
+                        <p>Highlights: High-quality finishes and integrated storage solutions.</p>
+                        <p><a class="btn btn-sm btn-outline-primary" href="/img/project-5.jpg" target="_blank">View full image</a>
+                        <a class="btn btn-sm btn-outline-secondary ms-2" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to top</a></p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/img/project-5.jpg" alt="Custom furniture project detailed view" class="img-fluid rounded" loading="lazy" width="800" height="600">
+                    </div>
+                </div>
+            </section>
+
+            <section id="project-6" class="col-12 mb-5">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 order-md-2">
+                        <h3>Renovation</h3>
+                        <p>Overview: Full home renovation including structural work, updated services and new finishes.</p>
+                        <p>Highlights: Structural strengthening, refurbished interiors and updated landscaping.</p>
+                        <p><a class="btn btn-sm btn-outline-primary" href="/img/project-6.jpg" target="_blank">View full image</a>
+                        <a class="btn btn-sm btn-outline-secondary ms-2" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to top</a></p>
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <img src="/img/project-6.jpg" alt="Renovation project detailed view" class="img-fluid rounded" loading="lazy" width="800" height="600">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- Project Details End -->
+
+    <Footer />
+
+    <script is:inline>
+        // Smooth scroll for project anchors
+        (function(){
+            document.querySelectorAll('a[href^="#project-"]').forEach(function(anchor){
+                anchor.addEventListener('click', function(e){
+                    // allow normal behaviour for keyboard-modified clicks
+                    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+                    e.preventDefault();
+                    var el = document.querySelector(this.getAttribute('href'));
+                    if (el) el.scrollIntoView({behavior:'smooth', block:'start'});
+                });
+            });
+        })();
+    </script>
+</BaseLayout>
