@@ -519,6 +519,15 @@
     color: #FDB515 !important;
 }
 
+/* Responsive fix: prevent caption text from overflowing its container on small screens */
+.about-caption { height:25%; }
+@media (max-width: 576px) {
+    .about-caption { height:auto; padding:.75rem .5rem !important; }
+    .about-caption h4 { font-size:.95rem; line-height:1.25; }
+}
+/* Ensure long words wrap instead of overflowing */
+.about-caption h4 { overflow-wrap: anywhere; }
+
 /* Border colors for primary */
 .border-2.border-white {
     border-width: 2px !important;
